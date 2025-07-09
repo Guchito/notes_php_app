@@ -6,7 +6,6 @@ $config = require 'config.php';
 $db = new Database($config['database']);
 $heading = "Create Note";
 
-dd(Validator::email('ahgfkajhsaf'));
 
 if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
@@ -26,4 +25,4 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
     }
 };
 
-require 'views/note-create.view.php';
+require 'views/note-create.view.php'; 

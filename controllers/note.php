@@ -11,7 +11,9 @@ $note = $db->query('SELECT * FROM notes WHERE id = :id', [
         abort(404);
     }
 
-    if ($note['user_id'] !== 1) {
+    $currentUserId = 1;
+
+    if ($note['user_id'] !== $currentUserId) {
         abort(403);
     }
 

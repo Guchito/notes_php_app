@@ -4,7 +4,7 @@ $db = new Database($config['database']);
 // Start the session
 $heading = "My notes";
 
-$notes = $db->query("SELECT * FROM notes WHERE user_id = 1")->fetchAll();
+$notes = $db->query("SELECT * FROM notes WHERE user_id = 1")->all();
 
 
 
